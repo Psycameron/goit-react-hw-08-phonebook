@@ -33,7 +33,7 @@ export const ContactList = () => {
 
   return (
     <>
-      {isLoading && <p>Loading contacts...</p>}
+      {isLoading && <p>...Loading contacts...</p>}
       {error && <p>{error}</p>}
       {items.length < 1 ? (
         <p></p>
