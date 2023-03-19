@@ -1,5 +1,5 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import AppBar from './AppBar/AppBar';
 import Contacts from 'pages/Contacts';
 import Home from 'pages/Home';
@@ -22,9 +22,9 @@ export const App = () => {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <ContactForm />
+      {/* <ContactForm />
       <Filter />
-      <ContactList />
+      <ContactList /> */}
     </div>
   );
 };

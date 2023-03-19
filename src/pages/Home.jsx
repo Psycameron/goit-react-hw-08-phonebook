@@ -1,5 +1,7 @@
-import React from 'react';
-
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Приветственная страница приложения</h1>
+    </div>
+  );
 }
