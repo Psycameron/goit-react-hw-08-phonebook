@@ -1,6 +1,6 @@
 // import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { onFilter } from 'redux/slice';
+import { onFilter } from 'redux/phoneBook/phoneBook-slice';
 
 import css from './Filter.module.css';
 

@@ -11,7 +11,7 @@ import {
 } from 'redux-persist';
 // import storage from 'redux-persist/lib/storage';
 import { authReducer } from './auth/auth-slice';
-import { phoneBookReducer } from './slice';
+import { phoneBookReducer } from './phoneBook/phoneBook-slice';
 
 // const authPersistConfig = {
 //   key: 'auth',

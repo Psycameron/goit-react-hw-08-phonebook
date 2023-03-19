@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { getContacts } from 'redux/phoneBook/phoneBook-selectors';
+import { addContact } from 'redux/phoneBook/phoneBook-operations';
 
 import css from './ContactForm.module.css';
 
 export function ContactForm() {
   const { items } = useSelector(getContacts);
+
   // console.log(`🚀 ~ ContactForm ~ contacts:`, items);
   const dispatch = useDispatch();
 

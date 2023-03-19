@@ -4,14 +4,15 @@ import {
   getError,
   getFilteredContacts,
   getIsLoading,
-} from 'redux/selectors';
+} from 'redux/phoneBook/phoneBook-selectors';
 
-import { deleteContact, fetchPhoneBook } from 'redux/operations';
 import { useEffect } from 'react';
+import { fetchPhoneBook } from 'redux/phoneBook/phoneBook-operations';
 
 // import PropTypes from 'prop-types';
 
 import css from './ContactList.module.css';
+import { deleteContact } from 'services/api';
 
 export const ContactList = () => {
   const isLoading = useSelector(getIsLoading);
@@ -20,9 +21,9 @@ export const ContactList = () => {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchPhoneBook());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchPhoneBook());
+  // }, [dispatch]);
 
   const filteredContacts = useSelector(getFilteredContacts);
 
