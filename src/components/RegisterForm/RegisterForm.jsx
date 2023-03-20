@@ -1,6 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-import { Notify } from 'notiflix';
 import { Form, Label, Input, Button } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
