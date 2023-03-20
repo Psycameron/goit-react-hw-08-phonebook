@@ -46,12 +46,20 @@ export const ContactForm = ({ handleSubmit }) => {
       <FormContact autoComplete="off">
         <Label>
           Name
-          <Input type="text" name="name"></Input>
+          <Input
+            type="text"
+            name="name"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+          ></Input>
           <ErrorText component="div" name="name" />
         </Label>
         <Label>
           Number
-          <Input type="tel" name="phone"></Input>
+          <Input
+            type="tel"
+            name="phone"
+            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+          ></Input>
           <ErrorText component="div" name="phone" />
         </Label>
         <Button type="submit">Add contact</Button>

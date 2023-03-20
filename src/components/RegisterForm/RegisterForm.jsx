@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
+import { Notify } from 'notiflix';
 import { Form, Label, Input, Button } from './RegisterForm.styled';
 
 export const RegisterForm = () => {
@@ -22,15 +23,32 @@ export const RegisterForm = () => {
     <Form onSubmit={handleSubmit} autoComplete="off">
       <Label>
         Username
-        <Input type="text" name="name" />
+        <Input
+          type="text"
+          name="name"
+          pattern=".{4,}"
+          title="The name must contain at least 4 characters"
+          required
+        />
       </Label>
       <Label>
         Email
-        <Input type="email" name="email" />
+        <Input
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+          required
+        />
       </Label>
       <Label>
         Password
-        <Input type="password" name="password" />
+        <Input
+          type="password"
+          name="password"
+          pattern=".{6,}"
+          title="The password must contain at least 6 characters"
+          required
+        />
       </Label>
       <Button type="submit">Register</Button>
     </Form>
