@@ -3,26 +3,18 @@ import { Helmet } from 'react-helmet';
 
 export default function Home() {
   return (
-    <Box
-      backgroundColor="#004c97"
-      paddingTop="20px"
-      backgroundImage="linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    )"
-    >
+    <Box paddingTop="30px">
       <Helmet>
         <title>Save Contacts</title>
       </Helmet>
       <Text
         height="100%"
         textAlign="center"
-        margin="15px"
         fontWeight="bold"
-        color="#f5f5f5"
+        color="#212121"
         fontSize="24px"
       >
-        Save your contacts here
+        Welcome! Join and keep your contacts here
       </Text>
     </Box>
   );

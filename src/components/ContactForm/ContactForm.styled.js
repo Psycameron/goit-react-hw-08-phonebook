@@ -44,6 +44,7 @@ export const Input = styled(Field)`
   all: unset;
   display: flex;
   border: 2px solid black;
+  border-radius: 10px;
   margin: 10px 0;
   padding: 15px;
   font-size: 20px;
@@ -54,11 +55,8 @@ export const Input = styled(Field)`
 `;
 
 export const Button = styled.button`
-  box-shadow: inset 0px 0px 12px 3px #ffffff;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
   background-color: #ededed;
-  border-radius: 4px;
-  border: 2px solid #dcdcdc;
+  border-radius: 8px;
   display: inline-block;
   cursor: pointer;
   color: #212121;
@@ -69,8 +67,7 @@ export const Button = styled.button`
   text-decoration: none;
   margin: 10px 0;
   &:hover {
-    background: linear-gradient(to bottom, #212121 5%, #ededed 100%);
-    background-color: #212121;
+    background-color: #5938f5;
     color: #ffffff;
   }
 `;

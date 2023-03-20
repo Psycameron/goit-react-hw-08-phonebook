@@ -10,7 +10,7 @@ export const UserMenu = () => {
 
   return (
     <Box display="flex" alignItems="center">
-      <Text fontSize="16px" margin="15px" color="#f5f5f5">
+      <Text fontSize="16px" margin="15px" color="#212121">
         Welcome, {user.name}{' '}
       </Text>
       <Button type="button" onClick={() => dispatch(logOut())}>

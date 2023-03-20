@@ -16,8 +16,7 @@ export const Navigation = () => {
           fontWeight="bold"
           borderRadius="md"
           _hover={{
-            background: 'linear-gradient(to bottom, #212121 5%, #ededed 100%)',
-            backgroundColor: '#212121',
+            backgroundColor: '#5938f5',
             color: '#ffffff',
           }}
         >
@@ -36,9 +35,7 @@ export const Navigation = () => {
             borderRadius="md"
             mr="0"
             _hover={{
-              background:
-                'linear-gradient(to bottom, #212121 5%, #ededed 100%)',
-              backgroundColor: '#212121',
+              backgroundColor: '#5938f5',
               color: '#ffffff',
             }}
           >

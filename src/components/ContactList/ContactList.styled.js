@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const List = styled.ul`
   list-style-type: none;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
+  max-width: 650px;
 `;
 
 export const Item = styled.li`
@@ -29,11 +32,8 @@ export const Item = styled.li`
 `;
 
 export const Button = styled.button`
-  box-shadow: inset 0px 0px 12px 3px #ffffff;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
   background-color: #ededed;
   border-radius: 4px;
-  border: 2px solid #dcdcdc;
   display: inline-block;
   cursor: pointer;
   color: #212121;
@@ -43,8 +43,7 @@ export const Button = styled.button`
   padding: 16px 16px;
   text-decoration: none;
   &:hover {
-    background: linear-gradient(to bottom, #212121 5%, #ededed 100%);
-    background-color: #212121;
+    background-color: #5938f5;
     color: #ffffff;
   }
 `;
