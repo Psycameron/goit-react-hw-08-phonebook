@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[415],{5415:function(e,n,t){t.r(n),t.d(n,{default:function(){return h}});var o=t(4087),c=t(9229),i=t(4270),r=t(184);function h(){return(0,r.jsxs)(o.xu,{paddingTop:"30px",children:[(0,r.jsx)(i.q,{children:(0,r.jsx)("title",{children:"Save Contacts"})}),(0,r.jsx)(c.x,{height:"100%",textAlign:"center",fontWeight:"bold",color:"#212121",fontSize:"24px",children:"Welcome! Join and keep your contacts here"})]})}}}]);
+//# sourceMappingURL=415.4473e5e9.chunk.js.map
