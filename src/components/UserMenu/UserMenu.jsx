@@ -1,18 +1,21 @@
-import { useDispatch, useSelector } from 'react-redux';
-import authOperations from 'redux/auth/auth-operations';
-import authSelectors from 'redux/auth/auth-selectors';
+import { useDispatch } from 'react-redux';
+import { logOut } from 'redux/auth/operations';
+import { useAuth } from 'hooks/useAuth';
+import { Box, Text } from '@chakra-ui/react';
+import { Button } from './UserMenu.styled';
 
-export default function UserMenu() {
+export const UserMenu = () => {
   const dispatch = useDispatch();
-  const name = useSelector(authSelectors.selectUserName);
-  // const avatar = ''
+  const { user } = useAuth();
 
   return (
-    <div>
-      <span>Welcome, {name}</span>
-      <button type="button" onClick={() => dispatch(authOperations.logOut())}>
+    <Box display="flex" alignItems="center">
+      <Text fontSize="16px" margin="15px" color="#f5f5f5">
+        Welcome, {user.name}{' '}
+      </Text>
+      <Button type="button" onClick={() => dispatch(logOut())}>
         Logout
-      </button>
-    </div>
+      </Button>
+    </Box>
   );
-}
+};

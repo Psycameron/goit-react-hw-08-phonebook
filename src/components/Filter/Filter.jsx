@@ -1,30 +1,26 @@
-// import PropTypes from 'prop-types';
+import { Label, FindInput } from './Filter.styled';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { onFilter } from 'redux/phoneBook/phoneBook-slice';
+import { filterChange } from '../../redux/contacts/filterSlice';
 
-import css from './Filter.module.css';
-
-export function Filter() {
+export const Filter = () => {
   const dispatch = useDispatch();
+  const onWrite = e => {
+    dispatch(filterChange(e.currentTarget.value));
+  };
 
   return (
-    <>
-      <h2>Contacts</h2>
-      <label className={css.label}>
-        Find contacts by name
-        <input
-          className={css.input}
-          type="text"
-          onChange={e => {
-            return dispatch(onFilter(e.target.value));
-          }}
-        />
-      </label>
-    </>
+    <Label>
+      <FindInput
+        type="text"
+        name="filter"
+        placeholder="Find contacts by name"
+        onChange={onWrite}
+      />
+    </Label>
   );
-}
+};
 
-// Filter.propTypes = {
-//   value: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-// };
+Label.propTypes = {
+  filter: PropTypes.string,
+};
